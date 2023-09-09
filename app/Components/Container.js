@@ -22,7 +22,7 @@ const Container=()=>{
     
     return(
         <div className="pt-8 px-2 ">
-            <h1 className='text-center font-bold underline underline-offset-2 text-2xl'> {session?.data?.user?.name}'s List </h1>  
+            <h1 className='text-center font-bold underline underline-offset-2 text-2xl'> {session?.data?.user?.name} List </h1>  
             {
                 state?.data?.map( a => <Card title={a.title} id={a.id} key={a.id} /> )
             }
